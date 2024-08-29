@@ -1,0 +1,71 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f4f4f4;
+    color: #f4f4f4;
+}
+/* La parte del encabezado */
+header{
+    background-color: #000000;
+    white-space: pre-line;
+    position: relative;
+    z-index: 2;
+}
+.container-header{
+    padding-left: 400px;
+}
+h1{
+    margin: 0;
+    font-size: 3rem;
+}
+.container-header p{
+    font-size: 1.1rem;
+}
+.download-link{
+    display: inline-flex;
+}
+.download-link i{
+    color: #f4f4f4;
+}
+span{
+    padding-left: 5px;
+    letter-spacing: 3px;
+}
+.container-perfil {
+    position: absolute;
+    top: 5%;             /* Ajusta la posición superior para que se alinee con el header */
+    left: 50%;            /* Ajusta la posición izquierda */
+    width: 40%;        /* Ajusta el ancho para abarcar el 100% del viewport */
+    height: 65%;       /* Ajusta la altura para abarcar el 100% del viewport o altura necesaria */
+    overflow: hidden;   /* Oculta cualquier parte de la imagen que sobresalga */
+    z-index: 3;         /* Asegura que el contenedor esté debajo del contenido principal */
+}
+
+.container-perfil img {
+    position: absolute; /* Posiciona la imagen dentro del contenedor */
+    width: 100%;        /* Ajusta el ancho de la imagen al contenedor */
+    height: 100%;       /* Ajusta la altura de la imagen al contenedor */
+    transform: translateX(-50%); /* Oculta parte del lado izquierdo */
+}
+.container-body {
+    position: relative; /* Asegura que el contenido del body esté en su lugar */
+    z-index: 2;         /* Asegura que el contenido del body esté sobre la imagen */
+    padding: 20px;      /* Ajusta el padding según sea necesario */
+}
+.container-body{
+    color: #000000;   
+    padding-left: 400px;
+    height: 100%
+}
+.about{
+    width: 30%;    
+}
+footer{
+    color: #000000;
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+    font-size: 1rem; 
+}
