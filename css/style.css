@@ -5,6 +5,7 @@ body {
     box-sizing: border-box;
     background-color: #f4f4f4;
     color: #f4f4f4;
+    font-size: 1rem; /* Esto define el tamaño base para el rem */
 }
 /* La parte del encabezado */
 header{
@@ -12,22 +13,32 @@ header{
     white-space: pre-line;
     position: relative;
     z-index: 2;
+    height: 43vh; /* Ocupa el 40% de la altura de la ventana */
 }
-.container-header{
-    padding-left: 400px;
+/* Contenedor del encabezado */
+.container-header {
+    padding-left: 27vw; /* Usa vw para mantener la proporción en pantallas más pequeñas */
+    width: 52vw;
 }
-h1{
+/* Títulos */
+h1 {
     margin: 0;
-    font-size: 3rem;
+    font-size: 2.5rem; /* Escalará con el tamaño de fuente base */
 }
-.container-header p{
+/* Párrafo del encabezado */
+.container-header p {
     font-size: 1.1rem;
 }
-.download-link{
+/* Enlace de descarga */
+.download-link {
     display: inline-flex;
+    align-items: center;
+    font-size: .7rem;
 }
-.download-link i{
+/* Ícono */
+.download-link i {
     color: #f4f4f4;
+    font-size: .9rem;
 }
 span{
     padding-left: 5px;
@@ -35,10 +46,10 @@ span{
 }
 .container-perfil {
     position: absolute;
-    top: 5%;             /* Ajusta la posición superior para que se alinee con el header */
+    top: 5vh; /* Usa vh para ajustar la posición superior */
     left: 50%;            /* Ajusta la posición izquierda */
     width: 40%;        /* Ajusta el ancho para abarcar el 100% del viewport */
-    height: 65%;       /* Ajusta la altura para abarcar el 100% del viewport o altura necesaria */
+    height: 60vh; /* Ajusta la altura para mantener la proporción */
     overflow: hidden;   /* Oculta cualquier parte de la imagen que sobresalga */
     z-index: 3;         /* Asegura que el contenedor esté debajo del contenido principal */
 }
@@ -52,12 +63,9 @@ span{
 .container-body {
     position: relative; /* Asegura que el contenido del body esté en su lugar */
     z-index: 2;         /* Asegura que el contenido del body esté sobre la imagen */
-    padding: 20px;      /* Ajusta el padding según sea necesario */
-}
-.container-body{
+    padding: 2vw;      /* Ajusta el padding según sea necesario */
     color: #000000;   
-    padding-left: 400px;
-    height: 100%
+    padding-left: 27vw;
 }
 .about{
     width: 30%;    
@@ -65,7 +73,10 @@ span{
 footer{
     color: #000000;
     text-align: center;
+    position: fixed; /* Fija el footer en la parte inferior de la página */
     bottom: 0;
     width: 100%;
+    left: 0; /* Asegura que el footer esté alineado con el borde izquierdo */
+    z-index: 4;
     font-size: 1rem; 
 }
