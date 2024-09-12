@@ -6,6 +6,8 @@ body {
     background-color: #f4f4f4;
     color: #f4f4f4;
     font-size: 1rem; /* Esto define el tamaño base para el rem */
+    width: 100vw;
+    height: 100vh;
 }
 /* La parte del encabezado */
 header{
@@ -71,12 +73,14 @@ span{
     width: 30%;    
 }
 footer{
+    display: flex;
+    justify-content: center;
+    align-items: end;
     color: #000000;
     text-align: center;
-    position: fixed; /* Fija el footer en la parte inferior de la página */
-    bottom: 0;
     width: 100%;
-    left: 0; /* Asegura que el footer esté alineado con el borde izquierdo */
-    z-index: 4;
+    z-index: 2;
     font-size: 1rem; 
+    height: 80px;
+    bottom: 0; 
 }
